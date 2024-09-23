@@ -10,7 +10,9 @@ class Knight(Thread):
 
     def run(self):
         print(f'{self.name}, на нас напали!')
-        for i in range(enemies//self.power):
+        for i in range(enemies):
+                if enemies-(self.power*(i+1)) < 0:
+                    break
             sleep(1)
             print(f'{self.name} сражается {i+1} день(дня)..., осталось {enemies-(self.power*(i+1))} воинов')
         print(f'{self.name} одержал победу спустя {enemies//self.power} дней(дня)!')
