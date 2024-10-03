@@ -7,11 +7,9 @@ class Runner:
 
     def run(self):
         self.distance += 10
-        return self.distance
 
     def walk(self):
         self.distance += 5
-        return self.distance
 
     def __str__(self):
         return self.name
