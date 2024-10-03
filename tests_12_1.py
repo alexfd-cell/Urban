@@ -24,7 +24,7 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(obj1.distance, 50)
 
     def test_run(self):
-        obj2 = Runner('Horse')
+        obj2 = Runner('Antelope')
         for i in range(10):
             obj2.run()
         self.assertEqual(obj2.distance, 100)
