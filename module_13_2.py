@@ -16,3 +16,7 @@ async def all_message(message):
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
+
+# Updates were skipped successfully.
+# Введите команду /start, чтобы начать общение
+# Привет! Я бот помогающий твоему здоровью
